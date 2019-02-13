@@ -26,6 +26,7 @@
             class="navbar-collapse" id="navcol2">
             <ul class="nav navbar-nav">
                 <li  class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                 <li  class="nav-item"><a href="deeplearning.html" class="nav-link">Deep Learning & 3D Modelling</a></li>
                 <li  class="nav-item" id="dropbtn"><a href="#" class="nav-link"><button class="dropbtn">Research
                   <i class="fa fa-caret-down"></i>
                 </button></a>
@@ -34,7 +35,6 @@
                     <a href="body.html">Body Modelling</a>
                  </div>
               </li>
-                <li  class="nav-item"><a href="deeplearning.html" class="nav-link">Deep Learning & 3D Modelling</a></li>
                 <li  class="nav-item"><a href="future.html" class="nav-link">Future Goals</a></li>
             </ul>
     </div>
@@ -53,11 +53,11 @@
       <p>
         Human Mesh Recovery (HMR) is a framework which is utilised to reconstruct
         a full 3D mesh of a human from a single 2D RGB image. To do this, a
-        generative human body model, SMPL, is used. The following figure gives
-        a brief overview of the framework:
+        generative human body model, SMPL (Skinned Multi-Person Linear Model), is used. The following figure gives
+        a brief overview of the framework: an image is input to a convolutional encoder and there is then an iterative process that aims to minimise joint projection error.
 
         <br> <br>
-        <img src="assets/img/bodyimg1.jpg" alt="HMR" class="face"> <br>
+        <img src="assets/img/bodyimg1.jpg" alt="HMR" class="face"> <br> <br>
 
         Estimating a 3D mesh gives rise to many different applications such as
         foreground and background detection in an image. This cannot be done
@@ -66,7 +66,7 @@
 
         Moreover, the output mesh from the framework is holistic, hence we
         always get the full 3D model of the body. This model can be easily used
-        by “animators, modified, measured, manipulated and retargeted”.
+        by “animators, modified, measured, manipulated and retargeted”[1].
         <br> <br>
 
         3D analysis of humans from a single image has been researched for a very
@@ -87,7 +87,7 @@
         <br> <br>
 
         The following figures show results from different mesh models.
-        They also exhibit different error percentiles.
+        They also exhibit different error percentiles. The key finding from the figures is that 3D reconstructions are possible without direct 3D supervision and the results are very close to that of the supervised model. One can only imagine the power of this technology when it is fully harnessed.
         <br> <br>
 
         <img src="assets/img/bodyimg2.jpg" alt="Mesh models" height="400" width="510">
